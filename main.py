@@ -30,8 +30,7 @@ while True:
             complete_todo_number = int(input(complete_todo_prompt))
             # Subtract 1 because the list starts at 0 and the user
             #   doesn't know that
-            complete_todo_number = complete_todo_number - 1
-            todo_list.remove(todo_list[complete_todo_number])
+            todo_list.pop(complete_todo_number - 1)
         case "exit":
             break
 
